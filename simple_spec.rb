@@ -29,7 +29,7 @@ module Eddorre
         if condition
           puts 'Pass'.upcase.green
         else
-          puts 'Fail'.downcase.red
+          puts 'Fail'.upcase.red
         end
       end
     end
