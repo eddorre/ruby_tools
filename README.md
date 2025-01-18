@@ -14,6 +14,7 @@ include Eddorre::SimpleSpec
 
 ### Running the test on the library
 ruby '~/.ruby_tools/spec.rb'
+
 ### Checking for equality
 test 'it should return two' do
   expect(1 + 1).to eq(2)
