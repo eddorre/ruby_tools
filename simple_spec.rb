@@ -35,7 +35,7 @@ module Eddorre
     end
 
     def describe(label, &block)
-      puts "Running test: #{label}"
+      puts "Running spec: #{label}"
       yield if block_given?
     end
 
