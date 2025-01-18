@@ -9,7 +9,7 @@ test 'testing test method' do
 end
 
 # Test the describe method
-test 'testing describe method' do
+describe 'testing describe method' do
   puts 'pass'.upcase.green
 end
 
