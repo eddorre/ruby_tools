@@ -24,4 +24,9 @@ end
 test 'it should return true' do
   expect { 1 + 1 == 2 }.to be_truthy
 end
+
+### Skip a test, the expectation won't be evaluated and a message that the test is skipped is output
+xtest 'it should be skipped' do
+  expect(1 + 1).to eq(2)
+end
 ```
