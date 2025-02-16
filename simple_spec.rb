@@ -62,6 +62,12 @@ module Eddorre
       end
     end
 
+    class NilMatcher
+      def matches?(target)
+        target.nil?
+      end
+    end
+
     def eq(expected)
       EqualityMatcher.new(expected)
     end
@@ -72,6 +78,10 @@ module Eddorre
 
     def be_truthy
       TruthyMatcher.new
+    end
+
+    def be_nil
+      NilMatcher.new
     end
   end
 end
