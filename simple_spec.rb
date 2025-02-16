@@ -52,6 +52,12 @@ module Eddorre
       end
     end
 
+    class FalseyMatcher
+      def matches?(target)
+        !target
+      end
+    end
+
     class EqualityMatcher
       def initialize(expected)
         @expected = expected
@@ -78,6 +84,10 @@ module Eddorre
 
     def be_truthy
       TruthyMatcher.new
+    end
+
+    def be_falsey
+      FalseyMatcher.new
     end
 
     def be_nil

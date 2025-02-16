@@ -53,6 +53,16 @@ test 'testing truthy matcher with block' do
   expect { 1 + 1 == 2 }.to be_truthy
 end
 
+# Test the falsey matcher
+test 'testing falsey matcher with a boolean' do
+  expect(false).to be_falsey
+end
+
+# Test the falsety matcher with a block
+test 'testing falsey matcher with block' do
+  expect { 1 + 1 == 3 }.to be_falsey
+end
+
 # Test the nil matcher
 test 'testing nil matcher' do
   expect(nil).to be_nil
