@@ -39,7 +39,12 @@ module Eddorre
       yield if block_given?
     end
 
+    def xdescribe(label, &block)
+      puts "Skipping spec: #{label}".yellow
+    end
+
     alias test describe
+    alias xtest xdescribe
 
     class TruthyMatcher
       def matches?(target)

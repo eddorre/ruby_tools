@@ -13,6 +13,16 @@ describe 'testing describe method' do
   puts 'pass'.upcase.green
 end
 
+# Test the xdescribe method
+xdescribe 'testing xdescribe method' do
+  puts 'skipped'.upcase.yellow
+end
+
+# Test the xtest method
+xtest 'testing xtest method' do
+  puts 'skipped'.upcase.yellow
+end
+
 # Test the eq matcher with a value
 test 'testing eq matcher' do
   expect(1).to eq(1)
