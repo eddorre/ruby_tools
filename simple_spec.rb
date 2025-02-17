@@ -6,7 +6,7 @@ module Eddorre
   module SimpleSpec
     class ExpectationTarget
       def initialize(expectation)
-        @expectation = expectation 
+        @expectation = expectation
       end
 
       def expectation
